@@ -42,7 +42,6 @@ const SEPOLIA_RPC_URL: string = process.env.SEPOLIA_RPC_URL || "";
 const PRIVATE_KEY: string = process.env.PRIVATE_KEY || "";
 const ETHERSCAN_API_KEY: string = process.env.ETHERSCAN_API_KEY || "";
 
-// ❌ Không bắt buộc PRIVATE_KEY khi chỉ compile
 if (!SEPOLIA_RPC_URL && process.env.HARDHAT_TARGET === "deploy") {
   throw new Error("SEPOLIA_RPC_URL is not set.");
 }
